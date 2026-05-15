@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lönekoll – Löne- och skattekalkylator</title>
+  <meta name="description" content="Beräkna din nettolön och se hela skattespecifikationen direkt i mobilen.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">₩</div>
+      Lönekoll
+    </a>
+    <div class="nav-links">
+      <a href="support.html"><span class="sv-inline">Support</span><span class="en-inline">Support</span></a>
+      <a href="privacy.html"><span class="sv-inline">Integritet</span><span class="en-inline">Privacy</span></a>
+      <button class="lang-btn" onclick="toggleLang()" id="langBtn">EN</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <div class="hero">
+    <div class="hero-icon">💰</div>
+    <h1>Lönekoll</h1>
+    <p class="sv">Beräkna din nettolön och se hela skattespecifikationen – för alla svenska kommuner.</p>
+    <p class="en">Calculate your net salary and see the full tax breakdown – for every Swedish municipality.</p>
+    <a href="#" class="appstore-btn">
+      &#xf8ff;&nbsp;
+      <span>
+        <small style="display:block;font-size:0.7rem;font-weight:400;opacity:0.8">
+          <span class="sv-inline">Hämta på</span><span class="en-inline">Download on the</span>
+        </small>
+        App Store
+      </span>
+    </a>
+  </div>
+
+  <!-- FEATURES -->
+  <div class="sv"><p class="section-title">Funktioner</p></div>
+  <div class="en"><p class="section-title">Features</p></div>
+
+  <div class="features">
+    <div class="feature">
+      <div class="feature-icon">🧮</div>
+      <h3 class="sv">Exakt beräkning</h3>
+      <h3 class="en">Precise calculation</h3>
+      <p class="sv">Kommunalskatt, landstingsskatt, statlig skatt, grundavdrag och jobbskatteavdrag – allt i ett.</p>
+      <p class="en">Municipal tax, regional tax, state tax, basic allowance and earned income credit – all in one.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🏙️</div>
+      <h3 class="sv">Alla kommuner</h3>
+      <h3 class="en">All municipalities</h3>
+      <p class="sv">Välj din hemkommun och din församling för rätt skattesatser automatiskt.</p>
+      <p class="en">Select your municipality and parish to get the correct tax rates automatically.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📊</div>
+      <h3 class="sv">Flera inkomstkällor</h3>
+      <h3 class="en">Multiple income sources</h3>
+      <p class="sv">Kombinera lön med pension, a-kassa eller sjukpenning och se totalskatten.</p>
+      <p class="en">Combine salary with pension, unemployment benefit or sick pay and see the total tax.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📤</div>
+      <h3 class="sv">Dela resultatet</h3>
+      <h3 class="en">Share the result</h3>
+      <p class="sv">Skicka din beräkning som en snygg bild via mail, meddelanden eller AirDrop.</p>
+      <p class="en">Send your calculation as a clean image via email, Messages or AirDrop.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">📋</div>
+      <h3 class="sv">Skattetabell</h3>
+      <h3 class="en">Tax table</h3>
+      <p class="sv">Se vilket tabellindex din arbetsgivare använder och jämför med din faktiska skatt.</p>
+      <p class="en">See which table index your employer uses and compare it to your actual tax.</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon">🔄</div>
+      <h3 class="sv">Alltid aktuell</h3>
+      <h3 class="en">Always up to date</h3>
+      <p class="sv">Skattedata uppdateras varje år. Köp det skatteår du behöver direkt i appen.</p>
+      <p class="en">Tax data is updated every year. Purchase the tax year you need directly in the app.</p>
+    </div>
+  </div>
+
+  <!-- TAX BREAKDOWN -->
+  <div class="card">
+    <div class="badge sv">Skattespecifikation</div>
+    <div class="badge en">Tax breakdown</div>
+    <h2 class="sv">Full koll på alla skatter</h2>
+    <h2 class="en">Full view of every tax</h2>
+    <p class="sv">Lönekoll beräknar alla komponenter i din skatt och visar dem tydligt uppdelade:</p>
+    <p class="en">Lönekoll calculates every component of your tax and displays them clearly:</p>
+    <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-top:16px;">
+      <div style="background:var(--light-gray);border-radius:10px;padding:12px;font-size:0.88rem;">
+        <strong class="sv">Kommunalskatt</strong><strong class="en">Municipal tax</strong>
+      </div>
+      <div style="background:var(--light-gray);border-radius:10px;padding:12px;font-size:0.88rem;">
+        <strong class="sv">Landstingsskatt</strong><strong class="en">Regional tax</strong>
+      </div>
+      <div style="background:var(--light-gray);border-radius:10px;padding:12px;font-size:0.88rem;">
+        <strong class="sv">Statlig inkomstskatt</strong><strong class="en">State income tax</strong>
+      </div>
+      <div style="background:var(--light-gray);border-radius:10px;padding:12px;font-size:0.88rem;">
+        <strong class="sv">Jobbskatteavdrag (JSA)</strong><strong class="en">Earned income credit</strong>
+      </div>
+      <div style="background:var(--light-gray);border-radius:10px;padding:12px;font-size:0.88rem;">
+        <strong class="sv">Grundavdrag</strong><strong class="en">Basic allowance</strong>
+      </div>
+      <div style="background:var(--light-gray);border-radius:10px;padding:12px;font-size:0.88rem;">
+        <strong class="sv">Kyrko- &amp; begravningsavgift</strong><strong class="en">Church &amp; burial fee</strong>
+      </div>
+    </div>
+  </div>
+
+  <!-- DISCLAIMER -->
+  <div class="card" style="background:var(--green-light);box-shadow:none;">
+    <p style="font-size:0.88rem;color:var(--green-dark);">
+      <span class="sv">⚠️ Lönekoll är ett beräkningsverktyg och ger en uppskattning av din skatt. Kontakta Skatteverket för exakt information.</span>
+      <span class="en">⚠️ Lönekoll is a calculation tool and provides an estimate of your taxes. Contact the Swedish Tax Agency (Skatteverket) for exact information.</span>
+    </p>
+  </div>
+
+</main>
+
+<footer>
+  <p>
+    <a href="support.html" class="sv-inline">Support</a>
+    <a href="support.html" class="en-inline">Support</a>
+    &nbsp;·&nbsp;
+    <a href="privacy.html"><span class="sv-inline">Integritet &amp; upphovsrätt</span><span class="en-inline">Privacy &amp; copyright</span></a>
+  </p>
+  <p style="margin-top:8px;">© 2026 Lönekoll</p>
+</footer>
+
+<script>
+  function toggleLang() {
+    document.body.classList.toggle('lang-en');
+    const isEn = document.body.classList.contains('lang-en');
+    document.getElementById('langBtn').textContent = isEn ? 'SV' : 'EN';
+    document.documentElement.lang = isEn ? 'en' : 'sv';
+    localStorage.setItem('lang', isEn ? 'en' : 'sv');
+  }
+  // Restore saved language
+  if (localStorage.getItem('lang') === 'en') {
+    document.body.classList.add('lang-en');
+    document.getElementById('langBtn').textContent = 'SV';
+    document.documentElement.lang = 'en';
+  }
+</script>
+
+</body>
+</html>

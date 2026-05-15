@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Support – Lönekoll</title>
+  <meta name="description" content="Hjälp och support för Lönekoll-appen.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+  <nav>
+    <a href="index.html" class="logo">
+      <div class="logo-icon">₩</div>
+      Lönekoll
+    </a>
+    <div class="nav-links">
+      <a href="support.html"><span class="sv-inline">Support</span><span class="en-inline">Support</span></a>
+      <a href="privacy.html"><span class="sv-inline">Integritet</span><span class="en-inline">Privacy</span></a>
+      <button class="lang-btn" onclick="toggleLang()" id="langBtn">EN</button>
+    </div>
+  </nav>
+</header>
+
+<main>
+
+  <div class="sv"><h1 style="font-size:2rem;font-weight:800;margin-bottom:8px;">Support</h1></div>
+  <div class="en"><h1 style="font-size:2rem;font-weight:800;margin-bottom:8px;">Support</h1></div>
+  <p class="sv" style="color:var(--gray);margin-bottom:32px;">Hittar du inte svar på din fråga nedan? Kontakta oss via e-post.</p>
+  <p class="en" style="color:var(--gray);margin-bottom:32px;">Can't find an answer below? Contact us by email.</p>
+
+  <!-- FAQ -->
+  <div class="card">
+    <h2 class="sv">Vanliga frågor</h2>
+    <h2 class="en">Frequently asked questions</h2>
+
+    <!-- Q1 -->
+    <div class="faq-item">
+      <div class="faq-question sv" onclick="toggle(this)">Hur beräknas skatten i appen?</div>
+      <div class="faq-question en" onclick="toggle(this)">How is the tax calculated in the app?</div>
+      <div class="faq-answer sv">
+        Lönekoll beräknar skatten baserat på din bruttolön, din hemkommun och ditt civilstånd (kyrkomedlem eller inte). Beräkningen inkluderar kommunalskatt, landstingsskatt, begravningsavgift, kyrkoavgift, grundavdrag, statlig inkomstskatt och jobbskatteavdrag (JSA) – samma komponenter som Skatteverket använder.
+      </div>
+      <div class="faq-answer en">
+        Lönekoll calculates tax based on your gross salary, municipality, and civil status (church member or not). The calculation includes municipal tax, regional tax, burial fee, church fee, basic allowance, state income tax, and earned income credit (JSA) – the same components used by the Swedish Tax Agency.
+      </div>
+    </div>
+
+    <!-- Q2 -->
+    <div class="faq-item">
+      <div class="faq-question sv" onclick="toggle(this)">Varför stämmer inte resultatet exakt med min lönespecifikation?</div>
+      <div class="faq-question en" onclick="toggle(this)">Why doesn't the result match my payslip exactly?</div>
+      <div class="faq-answer sv">
+        Lönekoll ger en uppskattning baserad på standardregler. Din faktiska skatt kan påverkas av individuella jämkningsbeslut, förmåner, tjänstepension eller andra avdrag som appen inte känner till. Använd skattetabellsimuleringen för att se hur din arbetsgivare beräknar preliminärskatten.
+      </div>
+      <div class="faq-answer en">
+        Lönekoll provides an estimate based on standard rules. Your actual tax may be affected by individual tax adjustment decisions, benefits, occupational pension, or other deductions the app isn't aware of. Use the tax table simulation to see how your employer calculates preliminary tax.
+      </div>
+    </div>
+
+    <!-- Q3 -->
+    <div class="faq-item">
+      <div class="faq-question sv" onclick="toggle(this)">Vad är jobbskatteavdraget (JSA)?</div>
+      <div class="faq-question en" onclick="toggle(this)">What is the earned income credit (jobbskatteavdrag)?</div>
+      <div class="faq-answer sv">
+        Jobbskatteavdraget är ett skatteavdrag som minskar skatten för den som arbetar och har löneinkomst. JSA gäller enbart inkomst av tjänst (lön) – inte pension, a-kassa eller sjukpenning. Lönekoll hanterar detta korrekt när du kombinerar flera inkomstkällor.
+      </div>
+      <div class="faq-answer en">
+        The earned income credit reduces tax for those with wage income. It applies only to employment income (salary) – not pension, unemployment benefit, or sick pay. Lönekoll handles this correctly when you combine multiple income sources.
+      </div>
+    </div>
+
+    <!-- Q4 -->
+    <div class="faq-item">
+      <div class="faq-question sv" onclick="toggle(this)">Hur köper jag ett nytt skatteår?</div>
+      <div class="faq-question en" onclick="toggle(this)">How do I purchase a new tax year?</div>
+      <div class="faq-answer sv">
+        Gå till fliken Skatteår i appen. Skatteår som inte ingår visas under "Lås upp fler år". Tryck på ett år och följ instruktionerna för köp via App Store.
+      </div>
+      <div class="faq-answer en">
+        Go to the Tax Years tab in the app. Years not included are listed under "Unlock more years". Tap a year and follow the purchase instructions via the App Store.
+      </div>
+    </div>
+
+    <!-- Q5 -->
+    <div class="faq-item">
+      <div class="faq-question sv" onclick="toggle(this)">Hur återställer jag mina köp på en ny enhet?</div>
+      <div class="faq-question en" onclick="toggle(this)">How do I restore my purchases on a new device?</div>
+      <div class="faq-answer sv">
+        Öppna appen och gå till Inställningar → Återställ köp. Logga in med samma Apple-ID som du använde vid köpet. Alla tidigare köpta skatteår återställs utan extra kostnad.
+      </div>
+      <div class="faq-answer en">
+        Open the app and go to Settings → Restore purchases. Sign in with the same Apple ID used at the time of purchase. All previously purchased tax years are restored at no extra cost.
+      </div>
+    </div>
+
+    <!-- Q6 -->
+    <div class="faq-item">
+      <div class="faq-question sv" onclick="toggle(this)">Vad är skattetabellsimuleringen?</div>
+      <div class="faq-question en" onclick="toggle(this)">What is the tax table simulation?</div>
+      <div class="faq-answer sv">
+        Arbetsgivare använder Skatteverkets skattetabeller för att dra preliminärskatt. Simuleringsläget visar vilket tabellindex (kolumn) som gäller för din inkomst och beräknar skatten på samma sätt som din arbetsgivare.
+      </div>
+      <div class="faq-answer en">
+        Employers use the Swedish Tax Agency's tax tables for preliminary tax withholding. Simulation mode shows which table index applies to your income and calculates tax the same way your employer does.
+      </div>
+    </div>
+
+    <!-- Q7 -->
+    <div class="faq-item">
+      <div class="faq-question sv" onclick="toggle(this)">Fungerar appen utan internetanslutning?</div>
+      <div class="faq-question en" onclick="toggle(this)">Does the app work without an internet connection?</div>
+      <div class="faq-answer sv">
+        Ja. Alla beräkningar sker lokalt på din enhet. Internetanslutning behövs bara för att ladda ner skattedata för nya år eller genomföra köp.
+      </div>
+      <div class="faq-answer en">
+        Yes. All calculations are performed locally on your device. An internet connection is only needed to download tax data for new years or to make purchases.
+      </div>
+    </div>
+
+  </div>
+
+  <!-- CONTACT -->
+  <div class="contact-box">
+    <p class="sv">Hittade du inte svar på din fråga? Kontakta oss:</p>
+    <p class="en">Didn't find an answer? Contact us:</p>
+    <a href="mailto:lonekollen+support@itspecialist.se">lonekollen+support@itspecialist.se</a>
+    <p style="margin-top:10px;font-size:0.82rem;" class="sv">Vi svarar normalt inom 1–2 vardagar.</p>
+    <p style="margin-top:10px;font-size:0.82rem;" class="en">We typically respond within 1–2 business days.</p>
+  </div>
+
+</main>
+
+<footer>
+  <p>
+    <a href="index.html"><span class="sv-inline">Hem</span><span class="en-inline">Home</span></a>
+    &nbsp;·&nbsp;
+    <a href="privacy.html"><span class="sv-inline">Integritet &amp; upphovsrätt</span><span class="en-inline">Privacy &amp; copyright</span></a>
+  </p>
+  <p style="margin-top:8px;">© 2026 Lönekoll</p>
+</footer>
+
+<script>
+  function toggleLang() {
+    document.body.classList.toggle('lang-en');
+    const isEn = document.body.classList.contains('lang-en');
+    document.getElementById('langBtn').textContent = isEn ? 'SV' : 'EN';
+    document.documentElement.lang = isEn ? 'en' : 'sv';
+    localStorage.setItem('lang', isEn ? 'en' : 'sv');
+  }
+  if (localStorage.getItem('lang') === 'en') {
+    document.body.classList.add('lang-en');
+    document.getElementById('langBtn').textContent = 'SV';
+    document.documentElement.lang = 'en';
+  }
+
+  function toggle(el) {
+    el.parentElement.classList.toggle('open');
+  }
+</script>
+
+</body>
+</html>
