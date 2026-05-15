@@ -132,7 +132,6 @@
 
 </main>
 
-  
 <footer>
   <p>
     <a href="index.html"><span class="sv-inline">Hem</span><span class="en-inline">Home</span></a>
@@ -157,7 +156,7 @@
   }
 
   function toggle(el) {
-    el.parentElement.classList.toggle('open');
+    el.closest('.faq-item').classList.toggle('open');
   }
 </script>
 
