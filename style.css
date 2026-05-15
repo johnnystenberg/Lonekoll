@@ -326,6 +326,24 @@ body.lang-en .faq-answer.en { display: none; }
 body.lang-en .faq-item.open .faq-answer.sv { display: none; }
 body.lang-en .faq-item.open .faq-answer.en { display: block; }
 
+/* Badge language visibility (overrides .badge { display: inline-block }) */
+.badge.en { display: none; }
+body.lang-en .badge.sv { display: none; }
+body.lang-en .badge.en { display: inline-block; }
+
+/* Prose blocks language visibility */
+.prose.en { display: none; }
+body.lang-en .prose.sv { display: none; }
+body.lang-en .prose.en { display: block; }
+
+/* Feature h3/p language visibility (overrides browser block default) */
+.feature h3.en,
+.feature p.en { display: none; }
+body.lang-en .feature h3.sv,
+body.lang-en .feature p.sv { display: none; }
+body.lang-en .feature h3.en { display: block; }
+body.lang-en .feature p.en { display: block; }
+
 /* Inline language elements */
 body.lang-en .sv-inline { display: none; }
 
